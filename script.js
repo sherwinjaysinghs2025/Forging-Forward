@@ -7,13 +7,13 @@ function setTheme(isDark) {
         body.style.setProperty('--bg', '#0a0a0a');
         body.style.setProperty('--surface', '#121212');
         body.style.setProperty('--text', '#e0e0e0');
-        themeToggle.textContent = '☀️';
+        if (themeToggle) themeToggle.textContent = '☀️';
         localStorage.setItem('theme', 'dark');
     } else {
         body.style.setProperty('--bg', '#f8fafc');
         body.style.setProperty('--surface', '#ffffff');
         body.style.setProperty('--text', '#1f2937');
-        themeToggle.textContent = '🌙';
+        if (themeToggle) themeToggle.textContent = '🌙';
         localStorage.setItem('theme', 'light');
     }
 }
