@@ -3,72 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideas • Forge Forward</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <meta name="description" content="Strong personal growth ideas for building discipline, confidence, and long-term success.">
+    <title>Ideas | Forge Forward</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
+    <div id="progress-bar" aria-hidden="true"></div>
 
-    <!-- Progress Bar -->
-    <div id="progress-bar"></div>
+    <header class="site-header">
+        <nav class="nav shell" aria-label="Primary navigation">
+            <a class="brand" href="./index.html" aria-label="Forge Forward home">
+                <span class="brand-mark">FF</span>
+                <span class="brand-text">Forge Forward</span>
+            </a>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">Forge Forward</a>
-            
+            <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ideas.html">Ideas</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./ideas.html">Ideas</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+                <li><a href="./about.html">About</a></li>
             </ul>
 
-            <div class="controls">
-                <button id="theme-toggle">☀️</button>
-                <div class="hamburger" id="hamburger">☰</div>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+                <span class="theme-toggle-icon" aria-hidden="true">SUN</span>
+                <span class="theme-toggle-text">Light</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="site-main shell">
+        <section class="hero page-hero">
+            <p class="eyebrow">Ideas That Build Winners</p>
+            <h1>10 powerful ideas to become a successful person.</h1>
+            <p class="hero-copy">
+                Save these, revisit them often, and apply one idea every week.
+                Success is built through disciplined repetition, not random motivation.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>High-Impact Ideas</h2>
+                <p>Each idea is designed to be simple, practical, and immediately actionable.</p>
             </div>
-        </div>
-    </nav>
 
-    <div class="container">
-        <header style="padding: 6rem 1rem 4rem;">
-            <h1>Ideas & Principles</h1>
-            <p class="tagline">Short, powerful thoughts to help you think and act like a successful person.</p>
-        </header>
-
-        <div class="section">
-            <div class="cards">
-                <div class="card">
-                    <h3>Discipline Beats Motivation</h3>
-                    <p>Motivation is temporary. Discipline is the bridge between your goals and your results.</p>
-                </div>
-                <div class="card">
-                    <h3>Comfort is the Silent Killer</h3>
-                    <p>The more comfortable you become, the less you grow. Real success lives outside your comfort zone.</p>
-                </div>
-                <div class="card">
-                    <h3>Small Daily Wins Compound</h3>
-                    <p>Success is not one big leap. It's hundreds of small, consistent actions done daily.</p>
-                </div>
-                <div class="card">
-                    <h3>Your Environment Shapes You</h3>
-                    <p>Surround yourself with people, books, and habits that pull you toward your best self.</p>
-                </div>
-                <div class="card">
-                    <h3>Own Your Mistakes</h3>
-                    <p>The fastest way to grow is to take full responsibility and learn from every failure.</p>
-                </div>
+            <div class="grid three">
+                <article class="card">
+                    <p class="card-kicker">Idea 01</p>
+                    <h3>Clarity Before Speed</h3>
+                    <p>If your direction is unclear, working harder only gets you lost faster. Define the target first, then execute.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 02</p>
+                    <h3>Discipline Over Mood</h3>
+                    <p>Your mood changes every day. Your standards should not. Commit to action whether you feel ready or not.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 03</p>
+                    <h3>Protect the First Hour</h3>
+                    <p>The first hour of your day shapes the rest. Avoid noise, focus your mind, and move your top priority first.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 04</p>
+                    <h3>Keep Promises to Yourself</h3>
+                    <p>Self-trust is built when you do what you said you would do. Keep small promises and your confidence grows.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 05</p>
+                    <h3>Make Progress Visible</h3>
+                    <p>Track your habits and outputs weekly. What gets measured gets improved, and what gets ignored fades away.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 06</p>
+                    <h3>Choose Hard, Grow Fast</h3>
+                    <p>Growth lives in difficult reps. Regularly choose tasks that challenge your comfort and stretch your identity.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 07</p>
+                    <h3>Audit Your Circle</h3>
+                    <p>Your environment is stronger than your willpower. Spend more time with people who make discipline normal.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 08</p>
+                    <h3>Convert Failure into Data</h3>
+                    <p>Do not label yourself after a mistake. Study what happened, adjust the system, and run the next iteration.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 09</p>
+                    <h3>Build Useful Skills</h3>
+                    <p>Focus on communication, problem-solving, and execution. These skills compound in every career and business path.</p>
+                </article>
+                <article class="card">
+                    <p class="card-kicker">Idea 10</p>
+                    <h3>Think in Decades</h3>
+                    <p>Do not chase temporary validation. Build a reputation, body of work, and mindset that remains strong for years.</p>
+                </article>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <!-- Back to Top -->
-    <div id="back-to-top">↑</div>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">Top</button>
 
-    <footer>
-        <p>Created for those who choose growth over comfort • Shared with purpose from Chennai</p>
+    <footer class="site-footer shell">
+        <p>Forge Forward | Growth over comfort | Chennai, India</p>
     </footer>
-
 </body>
 </html>

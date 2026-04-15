@@ -3,79 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forge Forward • Grow with Purpose</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <meta name="description" content="Forge Forward helps you build discipline, mindset, and practical habits to become a successful person.">
+    <title>Forge Forward | Build a Successful Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
+    <div id="progress-bar" aria-hidden="true"></div>
 
-    <!-- Progress Bar -->
-    <div id="progress-bar"></div>
+    <header class="site-header">
+        <nav class="nav shell" aria-label="Primary navigation">
+            <a class="brand" href="./index.html" aria-label="Forge Forward home">
+                <span class="brand-mark">FF</span>
+                <span class="brand-text">Forge Forward</span>
+            </a>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">Forge Forward</a>
-            
+            <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ideas.html">Ideas</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./ideas.html">Ideas</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+                <li><a href="./about.html">About</a></li>
             </ul>
 
-            <div class="controls">
-                <button id="theme-toggle">☀️</button>
-                <div class="hamburger" id="hamburger">☰</div>
-            </div>
-        </div>
-    </nav>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+                <span class="theme-toggle-icon" aria-hidden="true">SUN</span>
+                <span class="theme-toggle-text">Light</span>
+            </button>
+        </nav>
+    </header>
 
-    <div class="container">
-        <header>
-            <h1>Forge Forward</h1>
-            <p class="tagline">
-                Practical wisdom and honest insights to help you become the strongest, most successful version of yourself — one focused step at a time.
+    <main class="site-main shell">
+        <section class="hero">
+            <p class="eyebrow">Personal Growth for Real Builders</p>
+            <h1>Forge the mindset, habits, and courage of a successful person.</h1>
+            <p class="hero-copy">
+                Forge Forward is a focused space for people who want more from life.
+                Not shallow motivation. Not shortcuts. Just practical ideas that help you think clearly,
+                execute consistently, and grow into a person who creates meaningful success.
             </p>
-            <a href="ideas.html" class="btn">Explore Ideas →</a>
-        </header>
-
-        <div class="section">
-            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.4rem; color: #fff;">Latest Reflections</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Building Lasting Discipline</h3>
-                    <p>Why most motivation tricks fail and how to create habits that actually survive real life.</p>
-                    <a href="ideas.html" class="btn" style="margin-top: 1.5rem; padding: 12px 28px; font-size: 1rem;">Read →</a>
-                </div>
-                <div class="card">
-                    <h3>The Hidden Cost of Comfort</h3>
-                    <p>How staying comfortable quietly steals your future potential.</p>
-                    <a href="ideas.html" class="btn" style="margin-top: 1.5rem; padding: 12px 28px; font-size: 1rem;">Read →</a>
-                </div>
-                <div class="card">
-                    <h3>Mindset Shifts That Matter</h3>
-                    <p>Simple perspective changes that separate those who grow from those who stay stuck.</p>
-                    <a href="ideas.html" class="btn" style="margin-top: 1.5rem; padding: 12px 28px; font-size: 1rem;">Read →</a>
-                </div>
+            <div class="hero-actions">
+                <a class="btn" href="./ideas.html">Explore Ideas</a>
+                <a class="btn btn-ghost" href="./articles.html">Read Articles</a>
             </div>
-        </div>
+        </section>
 
-        <div class="section" style="text-align: center;">
-            <h2 style="font-size: 2.3rem; margin-bottom: 1.5rem;">Ready to Build Something Greater?</h2>
-            <p style="max-width: 680px; margin: 0 auto 2.5rem; opacity: 0.9;">
-                New ideas and deep dives are added regularly. Come back often — your future self will thank you.
-            </p>
-            <a href="articles.html" class="btn">Browse All Articles</a>
-        </div>
-    </div>
+        <section class="section">
+            <div class="section-heading">
+                <h2>Start Here</h2>
+                <p>Three principles that drive almost every breakthrough in life and work.</p>
+            </div>
+            <div class="grid three">
+                <article class="card">
+                    <h3>Think Long-Term</h3>
+                    <p>Successful people do not chase instant results. They make decisions their future self will thank them for.</p>
+                </article>
+                <article class="card">
+                    <h3>Show Up Daily</h3>
+                    <p>Consistency is your unfair advantage. Small disciplined actions, repeated for months, become extraordinary outcomes.</p>
+                </article>
+                <article class="card">
+                    <h3>Train Your Character</h3>
+                    <p>Skills get you opportunities. Character helps you keep and multiply them under pressure.</p>
+                </article>
+            </div>
+        </section>
 
-    <!-- Back to Top -->
-    <div id="back-to-top">↑</div>
+        <section class="section">
+            <div class="section-heading">
+                <h2>Forge Forward Promise</h2>
+                <p>This platform is built to be useful, honest, and practical for serious growth.</p>
+            </div>
+            <article class="card feature-card">
+                <p class="quote">
+                    "You do not become successful by waiting for perfect timing. You become successful by showing up with purpose, even when it is hard."
+                </p>
+                <p>
+                    From Chennai to anywhere in the world, this site is for people who want to build a life of impact,
+                    self-respect, and momentum.
+                </p>
+                <a class="text-link" href="./about.html">Learn the story behind this mission</a>
+            </article>
+        </section>
+    </main>
 
-    <footer>
-        <p>Created for those who choose growth over comfort • Shared with purpose from Chennai</p>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">Top</button>
+
+    <footer class="site-footer shell">
+        <p>Forge Forward | Growth over comfort | Chennai, India</p>
     </footer>
-
 </body>
 </html>

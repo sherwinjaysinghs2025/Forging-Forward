@@ -3,76 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About • Forge Forward</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <meta name="description" content="About Forge Forward, the mission, beliefs, and story from Chennai behind this personal growth platform.">
+    <title>About | Forge Forward</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
+    <div id="progress-bar" aria-hidden="true"></div>
 
-    <!-- Progress Bar -->
-    <div id="progress-bar"></div>
+    <header class="site-header">
+        <nav class="nav shell" aria-label="Primary navigation">
+            <a class="brand" href="./index.html" aria-label="Forge Forward home">
+                <span class="brand-mark">FF</span>
+                <span class="brand-text">Forge Forward</span>
+            </a>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">Forge Forward</a>
-            
+            <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ideas.html">Ideas</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./ideas.html">Ideas</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+                <li><a href="./about.html">About</a></li>
             </ul>
 
-            <div class="controls">
-                <button id="theme-toggle">☀️</button>
-                <div class="hamburger" id="hamburger">☰</div>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+                <span class="theme-toggle-icon" aria-hidden="true">SUN</span>
+                <span class="theme-toggle-text">Light</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="site-main shell">
+        <section class="hero page-hero">
+            <p class="eyebrow">About This Mission</p>
+            <h1>Forge Forward is built for people who refuse to stay average.</h1>
+            <p class="hero-copy">
+                This is a growth-first platform focused on character, consistency, and practical success.
+                It exists for people ready to build their future with intention.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>My Why</h2>
             </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <header style="padding: 6rem 1rem 4rem;">
-            <h1>About Forge Forward</h1>
-        </header>
-
-        <div class="section">
-            <h2 style="margin-bottom: 2rem;">Why This Site Exists</h2>
-            <p style="font-size: 1.2rem; max-width: 800px; margin-bottom: 2rem;">
-                Forge Forward was created for people who refuse to stay average. 
-                In a world full of distractions and quick fixes, this space is dedicated to timeless principles 
-                of personal growth, discipline, mindset, and real success.
-            </p>
-            
-            <h2 style="margin: 3rem 0 1.5rem;">My Philosophy</h2>
-            <p style="font-size: 1.15rem;">
-                Success is not about luck or talent alone. It's about consistent action, learning from failures, 
-                and becoming a better version of yourself every single day. 
-                I believe that anyone can build a meaningful and successful life if they are willing to do the inner work.
-            </p>
-
-            <div style="margin-top: 3rem; padding: 2rem; background: rgba(0,212,255,0.08); border-radius: 16px;">
-                <p style="font-style: italic; opacity: 0.9;">
-                    "Growth is uncomfortable. That's why most people avoid it. 
-                    But those who embrace the discomfort are the ones who eventually win."
+            <article class="card">
+                <p>
+                    I started Forge Forward because I saw how easy it is to drift through life distracted,
+                    busy, and stuck in potential. I wanted a place that cuts through noise and gives people
+                    honest principles they can apply immediately.
                 </p>
+                <p>
+                    My mission is simple: help people become stronger in mindset, sharper in action,
+                    and more intentional about the life they are building.
+                </p>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>What I Believe</h2>
             </div>
-        </div>
+            <ul class="belief-list">
+                <li>Success is built, not gifted. Daily discipline beats occasional intensity.</li>
+                <li>Character matters as much as competence. Integrity creates lasting confidence.</li>
+                <li>Failure is feedback. If you learn fast, you can grow faster than most people.</li>
+                <li>Environment shapes destiny. Protect your inputs, circle, and routines.</li>
+                <li>A meaningful life comes from contribution, not just achievement.</li>
+            </ul>
+        </section>
 
-        <div class="section" style="text-align: center;">
-            <p style="font-size: 1.1rem;">
-                Based in Chennai, India.<br>
-                Sharing honest reflections to help you forge a better future.
-            </p>
-        </div>
-    </div>
+        <section class="section">
+            <div class="section-heading">
+                <h2>Short Bio</h2>
+            </div>
+            <article class="card bio-card">
+                <p>
+                    I am based in Chennai, India, and deeply inspired by the energy, resilience,
+                    and ambition of this city. Forge Forward is my way of sharing lessons from real life,
+                    continuous self-work, and the pursuit of becoming a successful person with purpose.
+                </p>
+                <p>
+                    If you are committed to growth, you are in the right place.
+                </p>
+            </article>
+        </section>
+    </main>
 
-    <!-- Back to Top -->
-    <div id="back-to-top">↑</div>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">Top</button>
 
-    <footer>
-        <p>Created for those who choose growth over comfort • Shared with purpose from Chennai</p>
+    <footer class="site-footer shell">
+        <p>Forge Forward | Growth over comfort | Chennai, India</p>
     </footer>
-
 </body>
 </html>
